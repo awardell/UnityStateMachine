@@ -89,12 +89,12 @@ namespace Goon.AI
                 }
             }
 
-            if (!currentAction.IsComplete())
+            if (!currentAction.isComplete())
             {
                 currentAction.Perform();
             }
 
-            if (currentAction.IsComplete())
+            if (currentAction.isComplete())
             {
                 currentAction.Reset();
                 currentAction = null;
